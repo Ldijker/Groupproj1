@@ -15,6 +15,14 @@ knitr::opts_chunk$set(echo = TRUE)
 Groetjes Gabor
 Laziren was here
 Wietske was hier ook
+
+```{r test graph}
+hist(rbeta(100, shape1=5, shape2=2), col = 'navy')
+
+```
+
+
+
 ## Goal
 
 Demonstrate the central limit theorem
