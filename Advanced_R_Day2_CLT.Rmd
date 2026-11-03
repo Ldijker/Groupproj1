@@ -9,6 +9,11 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+#  |\__/,|   (`\
+#  |_ _  |.--.) )
+#  ( T   )     /
+# (((^_(((/(((_/
 ```
 
 Groetjes Gabor \
