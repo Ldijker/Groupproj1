@@ -5,16 +5,16 @@ date: "03-11-2026"
 output: 
   html_document:
     toc: TRUE
-  
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Groetjes Gabor
-Laziren was here
+Groetjes Gabor \
+Laziren was here \
 Wietske was hier ook
+
 ## Goal
 
 Demonstrate the central limit theorem
@@ -45,6 +45,7 @@ data <- data.frame(x1 = rbeta(1000, 10, 2),
 
 head(data)                         # Print head of data
 ```
+
 As you can see, we're using the beta distribution, which is defined as
 
 $\mathrm{Beta}(\alpha, \beta) = \displaystyle \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$
@@ -55,9 +56,9 @@ $\mathrm{B}(\alpha, \beta)=\displaystyle \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gam
 
 and $\Gamma$ is the Gamma function: $\Gamma(z) = \displaystyle \int_{0}^{\infty} t^{z-1} e^{-t}\mathrm dt$
 
-see also https://en.wikipedia.org/wiki/Beta_distribution
+see also <https://en.wikipedia.org/wiki/Beta_distribution>
 
-All of this is not very relevant, but to show how to write maths: https://rpruim.github.io/s341/S19/from-class/MathinRmd.html
+All of this is not very relevant, but to show how to write maths: <https://rpruim.github.io/s341/S19/from-class/MathinRmd.html>
 
 ## Here are some plots to show what the distributions look like graphically
 
@@ -187,11 +188,7 @@ qqnorm(mean_values)
 
 So far we have only used rbeta functions. Now make it possible to choose your function in the **generate_dataset** call
 
-Hints:
-- You can pass a function as an argument, and call this function by using the argument name in your function
-- Note that the random number functions all start with the number of samples, and are followed with specific arguments for the required distribution
-  - examples are runif, rnorm, rbeta, look them up with `?`
-- You can pass *any* number of arguments by using '...' in the argument list. This can be passed on to functions inside your function body
+Hints: - You can pass a function as an argument, and call this function by using the argument name in your function - Note that the random number functions all start with the number of samples, and are followed with specific arguments for the required distribution - examples are runif, rnorm, rbeta, look them up with `?` - You can pass *any* number of arguments by using '...' in the argument list. This can be passed on to functions inside your function body
 
 ```{r free form random argument}
 generate_dataset <- function(n = 300, m = 1000, a = 10, b = 2, func = rbeta) {
@@ -221,18 +218,14 @@ qqnorm(mean_values, main = "Mean values")
 
 ## Wrapping it up
 
-Lastly you take the role of the documentation writer. Use your newly gained knowledge about rmarkdown to describe your last function in more detail.
-It's good / allowed to split your final code block into smaller pieces, and also to demonstrate the use of the different functions.
-Start with a couple of lines with motivation about your functions, say how the functions work, and show that the Central Limit Theorem works for different distribution types.
-No need for long discussions, a few sentences each suffices.  
+Lastly you take the role of the documentation writer. Use your newly gained knowledge about rmarkdown to describe your last function in more detail. It's good / allowed to split your final code block into smaller pieces, and also to demonstrate the use of the different functions. Start with a couple of lines with motivation about your functions, say how the functions work, and show that the Central Limit Theorem works for different distribution types. No need for long discussions, a few sentences each suffices.
 
-**Answer**:      
-The functions generated make it easy to form an amount of datasets with random sampling. It makes it easy to call on to later, as you would only need to call the function and, if wanted, specify if the number of datasets, samples, function, or the alpha or beta differs from the given "standard" that is programmed in the function. The functions are easy to work with and easy to call whenever you want to plot or work with them later. 
+**Answer**:\
+The functions generated make it easy to form an amount of datasets with random sampling. It makes it easy to call on to later, as you would only need to call the function and, if wanted, specify if the number of datasets, samples, function, or the alpha or beta differs from the given "standard" that is programmed in the function. The functions are easy to work with and easy to call whenever you want to plot or work with them later.
 
 # Demonstrating the Central Limit Theorem
-**Answer**:    
-With a large enough sample size, the mean of a sample of data will be closer to the mean of the overall population in question as the sample size increases, notwithstanding the actual distribution of the data. The mean will therefore adhere to a normal distribution. 
 
+**Answer**:\
+With a large enough sample size, the mean of a sample of data will be closer to the mean of the overall population in question as the sample size increases, notwithstanding the actual distribution of the data. The mean will therefore adhere to a normal distribution.
 
 ........
-
