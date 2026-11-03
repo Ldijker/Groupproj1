@@ -119,6 +119,18 @@ mean_values <- calculate_mean_values(random_samples)
 
 qqnorm(random_samples[[1]])
 qqnorm(mean_values)
+
+#ik heb de mean evt nog op deze manier gedaan (stukje van de code): 
+
+calculate_mean_values <- function(generate_dataset) { 
+  avarages<- sapply(generate_dataset, mean) 
+  return(avarages)
+}
+
+random_samples <- generate_dataset()
+mean_values <- calculate_mean_values(random_samples)
+
+
 ```
 
 ## Refactoring: adding functionality
