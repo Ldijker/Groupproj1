@@ -16,14 +16,29 @@ knitr::opts_chunk$set(echo = TRUE)
 # (((^_(((/(((_/
 ```
 
-Groetjes Gabor \
-Laziren was here \
+Groetjes Gabor\
+Laziren was here\
 Wietske was hier ook
+
 
 ```{r test graph}
 hist(rbeta(100, shape1=5, shape2=2), col = 'navy')
 
 ```
+
+```{r}
+#          .-"""-.
+#         /       \
+#         \       /
+#  .-"""-.-`.-.-.<  _
+#  /      _,-\ ()()_/:)
+#  \     / ,  `     `|
+#    '-..-| \-.,___,  /
+#       \ `-.__/  /
+#        `-.__.-'`
+```
+
+
 ## Goal
 
 Demonstrate the central limit theorem
