@@ -20,6 +20,16 @@ Groetjes Gabor \
 Laziren was here \
 Wietske was hier ook
 
+<<<<<<< HEAD
+=======
+```{r test graph}
+hist(rbeta(100, shape1=5, shape2=2), col = 'navy')
+
+```
+
+
+
+>>>>>>> branch-test
 ## Goal
 
 Demonstrate the central limit theorem
