@@ -12,6 +12,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Groetjes Gabor
+
 ## Goal
 
 Demonstrate the central limit theorem
