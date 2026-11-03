@@ -48,7 +48,7 @@ Demonstrate the central limit theorem
 - Learn about RMarkdown (the thing you're reading now)
 - Refactor some code, think about simplification
 
-### prerequisites for the central limit demonstration
+### Ik wil een andere titel hier!
 
 - generator of numbers from some distribution
 - give some impression of the distribution
