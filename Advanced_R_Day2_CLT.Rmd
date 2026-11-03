@@ -11,9 +11,21 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Groetjes Gabor \
-Laziren was here \
+Groetjes Gabor\
+Laziren was here\
 Wietske was hier ook
+
+```{r}
+#          .-"""-.
+#         /       \
+#         \       /
+#  .-"""-.-`.-.-.<  _
+#  /      _,-\ ()()_/:)
+#  \     / ,  `     `|
+#    '-..-| \-.,___,  /
+#       \ `-.__/  /
+#        `-.__.-'`
+```
 
 ## Goal
 
